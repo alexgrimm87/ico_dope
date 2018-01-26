@@ -1,0 +1,93 @@
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP6kzRzQA2exVf1tN-EudPZcTZVsgadi0&language=en"></script>
+
+<!-- build:js scripts/validate_script.js -->
+<script type="text/javascript" src="scripts/validate_script.js" ></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/plagins.js -->
+<script type="text/javascript" src="scripts/plagins/device.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.fancybox.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.formstyler.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/maskInput.js" ></script>
+<script type="text/javascript" src="scripts/plagins/slick.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.svg3dtagcloud.min.js"></script>
+    <!-- add you plagins js here -->
+
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script type="text/javascript" src="scripts/basic_scripts.js" ></script>
+<script type="text/javascript" src="scripts/develop/develop_2.js" ></script>
+<script type="text/javascript" src="scripts/develop/develop_7.js" ></script>
+    <!-- add you develop js here -->
+<!-- endbuild -->
+
+<script>
+	var mapMarker = "images/marker.png";
+	if ($(window).outerWidth() > 1024) {
+	    var mapCenterY = 28.6139391;
+	    var mapCenterX = 77.20902120000005;
+	} else {
+		var mapCenterY = 28.6139391;
+	    var mapCenterX = 77.20902120000005;
+	}
+    var map = [];
+    var markersArray = [
+    	{"lat":28.6139391,"lng":77.20902120000005}
+    ];
+
+    var entries = [
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' }
+    ];
+
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+</script>
+
+<!-- /SCRIPTS -->

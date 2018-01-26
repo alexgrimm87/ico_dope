@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICODOPE</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="styles/plagins.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+<div class="global-wrapper">
+    <!-- HEADER -->
+    <header id="header" class="header">
+        <div class="mbox">
+          <div class="burger">
+            <div class="burger-brick"></div>
+            <div class="burger-brick middle"></div>
+            <div class="burger-brick"></div>
+          </div>
+          <div class="header__inner">
+            <a href="index.html" class="main-logo">
+              <img src="images/main-logo.png" alt="logo">
+            </a>
+            <div class="header__content-wrap">
+              <div class="header__content">
+                <div class="header__content-top">
+                  <ul class="social">
+                    <li class="social__item">
+                      <a href="#" target="_blank">
+                        <img class="social__icon" src="images/facebook-icon.png" alt="">
+                        <img class="social__hover" src="images/facebook-blue-icon.png" alt="" >
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank">
+                        <img class="social__icon" src="images/googleplus-icon.png" alt="">
+                        <img class="social__hover" src="images/googleplus-red-icon.png" alt="">
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" target="_blank">
+                        <img class="social__icon" src="images/twitter-icon.png" alt="">
+                        <img class="social__hover" src="images/twitter-blue-icon.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                  <span class="header__tel">+7 (810) 177 54 89</span>
+                </div>
+                <div class="header__content-bottom">
+                  <ul class="header__lang">
+                    <li class="header__lang-item">
+                      <a href="#">RU</a>
+                    </li>
+                    <li class="header__lang-item">
+                      <a href="#" class="active">EN</a>
+                    </li>
+                  </ul>
+                  <div class="header__search">
+                    <a href="#" class="js-search">Search</a>
+                    <form method="post" action="ajax.php" class="header__search-form">
+                      <div class="search-field js-header-search">
+                        <button type="submit"></button>
+                        <input type="text" name="search" placeholder="Search..." />
+                      </div>
+                    </form>
+                  </div>
+                  <ul class="nav-list">
+                    <li class="nav-list__item">
+                      <a href="index.html">Main Page</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="category.html">Top Public</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="interesting.html">Interesting</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="about.html">About us</a>
+                    </li>
+                    <li class="nav-list__item dropdown">
+                      <a href="#">Category</a>
+                      <ul>
+                        <li>
+                          <a href="category.html">Category 2</a>
+                        </li>
+                        <li>
+                          <a href="category.html">Category 3</a>
+                        </li>
+                        <li>
+                          <a href="category.html">Category 4</a>
+                        </li>
+                        <li>
+                          <a href="category.html">Category 5</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-list__item">
+                      <a href="price.html">Price</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="button js-popup">Contact us</a>
+            </div>
+          </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+		<section class="search">
+		  <div class="mbox">
+		    <ul class="breadcrumbs">
+		      <li class="breadcrumbs__item">
+		        <a href="index.html">Home</a>
+		      </li>
+		      <li class="breadcrumbs__item">
+		        <a href="#">Search</a>
+		      </li>
+		    </ul>
+		    <div class="sortbar">
+		      <form method="post" action="ajax.php" class="sorting">
+		        <div class="sorting__item">
+		          <select name="sort_by" class="sort_by" data-placeholder="Sort by">
+		            <option value=""></option>
+		            <option value="category2">Category 2</option>
+		            <option value="category3">Category 3</option>
+		            <option value="category4">Category 4</option>
+		            <option value="category5">Category 5</option>
+		            <option value="category6">Category 6</option>
+		          </select>
+		        </div>
+		        <div class="sorting__item header__search-form">
+		          <div class="search-field">
+		            <button type="submit"></button>
+		            <input type="text" name="search" placeholder="Search..." value="">
+		          </div>
+		        </div>
+		        <div class="sorting__item sorting__tag">
+		          <input type="hidden" name="hashtags[]" value="1" />
+		          <a href="#" class="tag">#iphone</a>
+		          <a href="#" class="delete_tag">x</a>
+		        </div>
+		        <div class="sorting__item sorting__tag">
+		          <input type="hidden" name="hashtags[]" value="2" />
+		          <a href="#" class="tag">#consectetur</a>
+		          <a href="#" class="delete_tag">x</a>
+		        </div>
+		        <div class="sorting__item sorting__tag">
+		          <input type="hidden" name="hashtags[]" value="3" />
+		          <a href="#" class="tag">#montes</a>
+		          <a href="#" class="delete_tag">x</a>
+		        </div>
+		      </form>
+		      <div class="results"><span>1,521 Results</span></div>
+		    </div>
+		  </div>
+		  <div class="mbox2">
+		    <div class="search__wrap">
+		      <div class="search__results">
+		        <ul class="search__content">
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		          <li class="article-item">
+		            <img src="images/article-pic03.jpg" alt="">
+		            <div class="article-item__hide">
+		              <ul class="stats">
+		                <li>0</li>
+		                <li>250</li>
+		              </ul>
+		              <a href="article.html" class="button button--white">Read</a>
+		            </div>
+		            <div class="article-item__content">
+		              <div class="new-item new-item--white">
+		                <p>new</p>
+		              </div>
+		              <div class="article-item__content-inner">
+		                <ul class="hashtags">
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#public</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#fermentum</a>
+		                  </li>
+		                  <li class="hashtags__item">
+		                    <a href="search.html">#montes</a>
+		                  </li>
+		                </ul>
+		                <div class="article-item__title">
+		                  <h3>Acu ipsum, tincidunt ac sapien et, easy da iscelerisque.</h3>
+		                </div>
+		                <div class="article-item__text cut-text" data-cut="110">
+		                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, tincidunt ac sapien et, scelerisque penatibus luctus.</p>
+		                </div>
+		              </div>
+		              <span class="date">19.06.2017</span>
+		            </div>
+		          </li>
+		        </ul>
+		        <div class="pagination">
+		          <a href="#" class="arrow"></a>
+		          <ul class="pagination__list">
+		            <li class="pagination__list-item">
+		              <a href="#">...</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">2</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">3</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">4</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">5</a>
+		            </li>
+		            <li class="pagination__list-item">6</li>
+		            <li class="pagination__list-item">
+		              <a href="#">7</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">8</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">9</a>
+		            </li>
+		            <li class="pagination__list-item">
+		              <a href="#">...</a>
+		            </li>
+		          </ul>
+		          <a href="#" class="arrow arrow--next"></a>
+		        </div>
+		      </div>
+		      <div class="search__banners">
+		        <a href="#" class="banner"><img src="images/banner1.jpg" alt=""></a>
+		        <a href="#" class="banner"><img src="images/banner2.jpg" alt=""></a>
+		        <a href="#" class="banner"><img src="images/banner3.jpg" alt=""></a>
+		        <div class="subscribe">
+		          <div class="subscribe__top">
+		            <div class="subscribe__title">
+		              <h3>Subscribe us</h3>
+		            </div>
+		            <div class="subscribe__subtitle">
+		              <p>Every 2 weeks we will send our latest news to your email</p>
+		            </div>
+		          </div>
+		          <form action="ajax.php" method="post" class="subscribe__form">
+		            <div class="subscribe__form-field">
+		              <input type="email" name="email" placeholder="E-mail" required />
+		            </div>
+		            <button type="submit" class="button button--fill js-btnAnim">
+		              <span>Subsribe</span>
+		            </button>
+		          </form>
+		        </div>
+		        <a href="#" class="banner"><img src="images/banner4.jpg" alt=""></a>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+      <div id="call_success" class="call-success">
+        <div class="call-success__wrap">
+          <div class="call-success__title">Thank you for your request!</div>
+          <div class="call-success__subtitle">We will contact you shortly</div>
+        </div>
+      </div>
+    
+      <div id="call-popup" class="call-popup">
+        <div class="call-popup__title">Please, fill the fields to contact us</div>
+        <form action="ajax-programer.php" class="call-popup__form">
+          <div class="call-popup__field-row">
+            <div class="call-popup__field">
+              <input type="text" name="name" placeholder="Name" />
+            </div>
+            <div class="call-popup__field">
+              <input type="email" name="email" placeholder="E-mail" required />
+            </div>
+          </div>
+          <div class="call-popup__message">
+            <label class="call-popup__label" for="textarea">Message</label>
+            <textarea id="textarea" name="message"></textarea>
+          </div>
+          <button type="submit" class="button button--fill js-btnAnim">
+            <span>Send</span>
+          </button>
+        </form>
+      </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer class="footer">
+    	<div class="mbox">
+    		<div class="footer__inner">
+    				<div class="footer__left-wrap">
+    			    <a href="index.html" class="main-logo">
+    			      <img src="images/main-logo.png" alt="logo">
+    			    </a>
+    	        <ul class="nav-list nav-list--footer">
+                <li class="nav-list__item">
+                  <a href="index.html">Main Page</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="category.html">Top Public</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="interesting.html">Interesting</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="about.html">About us</a>
+                </li>
+                <li class="nav-list__item dropdown">
+                  <a href="#">Category</a>
+                  <ul>
+                    <li >
+                      <a href="category.html">Category 2</a>
+                    </li>
+                    <li>
+                      <a href="category.html">Category 3</a>
+                    </li>
+                    <li>
+                      <a href="category.html">Category 4</a>
+                    </li>
+                    <li>
+                      <a href="category.html">Category 5</a>
+                    </li>
+                  </ul>
+                </li>
+    	        </ul>
+            </div>
+            <div class="footer__contacts-wrap">
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" target="_blank">
+                    <img class="social__icon" src="images/facebook-icon.png" alt="">
+                    <img class="social__hover" src="images/facebook-blue-icon.png" alt="" >
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" target="_blank">
+                    <img class="social__icon" src="images/googleplus-icon.png" alt="">
+                    <img class="social__hover" src="images/googleplus-red-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" target="_blank">
+                    <img class="social__icon" src="images/twitter-icon.png" alt="">
+                    <img class="social__hover" src="images/twitter-blue-icon.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__contacts">
+              	<li class="footer__contacts-item">
+                  <span>+7 (810) 177 54 89</span>
+              	</li>
+              	<li class="footer__contacts-item">
+              		<span>Icodope@gmail.com</span>
+              	</li>
+              	<li class="footer__contacts-item">
+              		<a href="https://facebook.com" target="_blank">We are in Facebook</a>
+              	</li>
+              	<li class="footer__contacts-item">
+              		<a href="https://twitter.com" target="_blank">We are in Twitter</a>
+              	</li>
+              </ul>
+            </div>
+            <div class="subscribe subscribe--footer">
+    	        <div class="subscribe__top">
+    	          <div class="subscribe__title">
+    	            <h3>Subscribe us</h3>
+    	          </div>
+    	          <div class="subscribe__subtitle">
+    	            <p>Every 2 weeks we will send our latest news to your email</p>
+    	          </div>
+    	        </div>
+    	        <form method="post" action="ajax.php" class="subscribe__form">
+    	          <div class="subscribe__form-field">
+    	            <input type="email" name="email" placeholder="E-mail" required />
+    	          </div>
+    	          <button type="submit" class="button js-btnAnim">
+                  <span>Subsribe</span>
+                </button>
+    	        </form>
+          	</div>
+    	    </div>
+        </div>
+      	<div class="footer__policity">
+        	<a href="policity.html">Website Policity</a>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP6kzRzQA2exVf1tN-EudPZcTZVsgadi0&language=en"></script>
+
+<script src="scripts/validate_script.js"></script>
+
+<script src="scripts/plagins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+<script>
+	var mapMarker = "images/marker.png";
+	if ($(window).outerWidth() > 1024) {
+	    var mapCenterY = 28.6139391;
+	    var mapCenterX = 77.20902120000005;
+	} else {
+		var mapCenterY = 28.6139391;
+	    var mapCenterX = 77.20902120000005;
+	}
+    var map = [];
+    var markersArray = [
+    	{"lat":28.6139391,"lng":77.20902120000005}
+    ];
+
+    var entries = [
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' }
+    ];
+
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+</script>
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>

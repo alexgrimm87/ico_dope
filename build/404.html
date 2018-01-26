@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICODOPE</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="styles/plagins.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+<div class="global-wrapper">
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+        <div class="notfound">
+        	<div class="mbox">
+        		<div class="logo"><img src="images/main-logo.png" alt=""></div>
+        		<div class="notfound__wrap">
+        			<h1>404</h1>
+        			<h4>Page not found</h4>
+        			<p>Woops. Looks like this page doesn't exist.</p>
+        			<a href="index.html" class="button">Back Home</a>
+        		</div>
+        	</div>
+        </div>
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+      <div id="call_success" class="call-success">
+        <div class="call-success__wrap">
+          <div class="call-success__title">Thank you for your request!</div>
+          <div class="call-success__subtitle">We will contact you shortly</div>
+        </div>
+      </div>
+    
+      <div id="call-popup" class="call-popup">
+        <div class="call-popup__title">Please, fill the fields to contact us</div>
+        <form action="ajax-programer.php" class="call-popup__form">
+          <div class="call-popup__field-row">
+            <div class="call-popup__field">
+              <input type="text" name="name" placeholder="Name" />
+            </div>
+            <div class="call-popup__field">
+              <input type="email" name="email" placeholder="E-mail" required />
+            </div>
+          </div>
+          <div class="call-popup__message">
+            <label class="call-popup__label" for="textarea">Message</label>
+            <textarea id="textarea" name="message"></textarea>
+          </div>
+          <button type="submit" class="button button--fill js-btnAnim">
+            <span>Send</span>
+          </button>
+        </form>
+      </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer class="footer">
+    	<div class="mbox">
+    		<div class="footer__inner">
+    				<div class="footer__left-wrap">
+    			    <a href="index.html" class="main-logo">
+    			      <img src="images/main-logo.png" alt="logo">
+    			    </a>
+    	        <ul class="nav-list nav-list--footer">
+                <li class="nav-list__item">
+                  <a href="index.html">Main Page</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="category.html">Top Public</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="interesting.html">Interesting</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="about.html">About us</a>
+                </li>
+                <li class="nav-list__item dropdown">
+                  <a href="#">Category</a>
+                  <ul>
+                    <li >
+                      <a href="category.html">Category 2</a>
+                    </li>
+                    <li>
+                      <a href="category.html">Category 3</a>
+                    </li>
+                    <li>
+                      <a href="category.html">Category 4</a>
+                    </li>
+                    <li>
+                      <a href="category.html">Category 5</a>
+                    </li>
+                  </ul>
+                </li>
+    	        </ul>
+            </div>
+            <div class="footer__contacts-wrap">
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" target="_blank">
+                    <img class="social__icon" src="images/facebook-icon.png" alt="">
+                    <img class="social__hover" src="images/facebook-blue-icon.png" alt="" >
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" target="_blank">
+                    <img class="social__icon" src="images/googleplus-icon.png" alt="">
+                    <img class="social__hover" src="images/googleplus-red-icon.png" alt="">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" target="_blank">
+                    <img class="social__icon" src="images/twitter-icon.png" alt="">
+                    <img class="social__hover" src="images/twitter-blue-icon.png" alt="">
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__contacts">
+              	<li class="footer__contacts-item">
+                  <span>+7 (810) 177 54 89</span>
+              	</li>
+              	<li class="footer__contacts-item">
+              		<span>Icodope@gmail.com</span>
+              	</li>
+              	<li class="footer__contacts-item">
+              		<a href="https://facebook.com" target="_blank">We are in Facebook</a>
+              	</li>
+              	<li class="footer__contacts-item">
+              		<a href="https://twitter.com" target="_blank">We are in Twitter</a>
+              	</li>
+              </ul>
+            </div>
+            <div class="subscribe subscribe--footer">
+    	        <div class="subscribe__top">
+    	          <div class="subscribe__title">
+    	            <h3>Subscribe us</h3>
+    	          </div>
+    	          <div class="subscribe__subtitle">
+    	            <p>Every 2 weeks we will send our latest news to your email</p>
+    	          </div>
+    	        </div>
+    	        <form method="post" action="ajax.php" class="subscribe__form">
+    	          <div class="subscribe__form-field">
+    	            <input type="email" name="email" placeholder="E-mail" required />
+    	          </div>
+    	          <button type="submit" class="button js-btnAnim">
+                  <span>Subsribe</span>
+                </button>
+    	        </form>
+          	</div>
+    	    </div>
+        </div>
+      	<div class="footer__policity">
+        	<a href="policity.html">Website Policity</a>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP6kzRzQA2exVf1tN-EudPZcTZVsgadi0&language=en"></script>
+
+<script src="scripts/validate_script.js"></script>
+
+<script src="scripts/plagins.js"></script>
+
+<script src="scripts/main.js"></script>
+
+<script>
+	var mapMarker = "images/marker.png";
+	if ($(window).outerWidth() > 1024) {
+	    var mapCenterY = 28.6139391;
+	    var mapCenterX = 77.20902120000005;
+	} else {
+		var mapCenterY = 28.6139391;
+	    var mapCenterX = 77.20902120000005;
+	}
+    var map = [];
+    var markersArray = [
+    	{"lat":28.6139391,"lng":77.20902120000005}
+    ];
+
+    var entries = [
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' },
+        { label: 'Subscribe us', url: '#' }
+    ];
+
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+</script>
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>

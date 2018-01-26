@@ -1,0 +1,31 @@
+<div class="hidden-block">
+
+  <div id="call_success" class="call-success">
+    <div class="call-success__wrap">
+      <div class="call-success__title">Thank you for your request!</div>
+      <div class="call-success__subtitle">We will contact you shortly</div>
+    </div>
+  </div>
+
+  <div id="call-popup" class="call-popup">
+    <div class="call-popup__title">Please, fill the fields to contact us</div>
+    <form action="ajax-programer.php" class="call-popup__form">
+      <div class="call-popup__field-row">
+        <div class="call-popup__field">
+          <input type="text" name="name" placeholder="Name" />
+        </div>
+        <div class="call-popup__field">
+          <input type="email" name="email" placeholder="E-mail" required />
+        </div>
+      </div>
+      <div class="call-popup__message">
+        <label class="call-popup__label" for="textarea">Message</label>
+        <textarea id="textarea" name="message"></textarea>
+      </div>
+      <button type="submit" class="button button--fill js-btnAnim">
+        <span>Send</span>
+      </button>
+    </form>
+  </div>
+
+</div>
